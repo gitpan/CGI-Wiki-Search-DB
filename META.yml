@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name: CGI-Wiki-Search-DB
+version: 0.17
+author: ~
+abstract: use the DB to search for wiki pages
+license: perl
+requires:
+  CGI::Wiki: 0
+  DBI: 0
+provides:
+  CGI::Wiki::Search::DB:
+    file: lib/CGI/Wiki/Search/DB.pm
+    version: 0.17
+generated_by: Module::Build version 0.25

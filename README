@@ -1,0 +1,26 @@
+NAME
+    CGI::Wiki::Search::DB - use the DB to search for wiki pages
+
+SYNOPSIS
+      my $store = $wiki->store;
+      my $search = CGI::Wiki::Search::DB->new( store => $store );
+      my %wombat_nodes = $search->search_nodes("wombat");
+
+    Provides search-related methods for CGI::Wiki.
+
+    See also CGI::Wiki::Search::Base, for methods not documented here.
+
+    Searches very simply, using the database's own text-searching ability.
+    Doesn't do fuzzy matching, doesn't do phrases, doesn't depend on a whole
+    host of other modules.
+
+METHODS
+    new
+          my $search = CGI::Wiki::Search::DB->new( store => $store );
+
+        Takes only one parameter, which is mandatory. "store" is the
+        CGI::Wiki store object that you want to search.
+
+SEE ALSO
+    CGI::Wiki, CGI::Wiki::Search::Base.
+
